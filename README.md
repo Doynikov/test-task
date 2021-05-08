@@ -1,3 +1,31 @@
+# vd_auth
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Тестовый вход
+```
+email: "vsd62@yandex.ru"
+password: "administrator"
+```
+
 # Тестовое задание
 Необходимо развернуть простое vue приложение со страницами:
 1. Авторизация
@@ -29,5 +57,3 @@
 - Под сессиями подразумевается сеанс авторизации, не http сессии.
 - Проект должен быть инициализирован через VUE CLI
 - Результат предоставить в виде форка этого репозитория
-
-
