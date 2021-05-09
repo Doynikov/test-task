@@ -7,26 +7,31 @@ body {
 	padding-bottom: 52px;
 	background-color: #e5e6e6;
 }
+
 #app {
 	display: table;
 	height: 100%;
-	width:100%;
+	width: 100%;
 }
-.main {	
+
+.main {
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
 }
+
 input.form-control {
-	height:48px;
+	height: 48px;
 	border-radius: 0;
 	background-color: #edefef;
 	border: 1px solid #c5c1c6;
 }
+
 input {
 	outline: 0 !important
 	box-shadow: none !important;
 }
+
 .form-control:focus {
 	outline: 0;
 	box-shadow: none;
@@ -42,26 +47,32 @@ label {
 	text-align: left;
 	width: 100%;
 }
+
 .btn {
 	padding: 13px 44px;
 	border-radius: 0;
 }
+
 .btn-primary, .btn-primary:focus, .btn-primary.focus {
 	background-color: #7a8a9b;
 	border: 0px;
 }
+
 .btn-primary:hover {
 	background-color: #2c3e50;
 	border: 0px;
 }
-.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
 	background-color: #2c3e50;
 	border: 0px;
 }
+
 .return-error {
 	color: red;
 	height: 40px;
 }
+
 #footer {
 	/* background-color: #2c3e50; */
 	border: 1px solid #c5c1c6;
@@ -70,25 +81,29 @@ label {
 	color: #777;
 	bottom: 0px;
 }
+
 .green {
 	color: #1abc9c
 }
+
 .red {
 	color: #d35400
 }
+
 h1, h2, h3, h4 {
 	font-weight: 300;
 }
+
 .intro h1 {
 	color: #1abc9c;
-	margin-bottom:60px;
+	margin-bottom: 60px;
 }
 
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
+input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
 	border: 1px solid #c5c1c6;
-	background-color:#edefef;
+	background-color: #edefef;
 	-webkit-text-fill-color: #777;
 	-webkit-box-shadow: 0 0 0px 1000px #edefef inset;
 	transition: background-color 5000s ease-in-out 0s;

@@ -18,8 +18,8 @@ if (token) {
 Vue.config.productionTip = false
 
 new Vue({
-  Vuelidate,
-  router,
-  store,
-  render: h => h(App)
+	Vuelidate,
+	router,
+	store,
+	render: h => h(App)
 }).$mount('#app')
