@@ -47,6 +47,16 @@ export default new Vuex.Store({
 	actions: {
 		login({commit}, user){
 			return new Promise((resolve, reject) => {
+				commit('auth_request');
+				/*
+
+				Здесь должно быть обращение к серверному скрипту, например, с помощью axios
+
+				*/
+				/* -------------------------------------------- */
+				/* Эмуляция коммуникации с бэкендом             */
+				/* -------------------------------------------- */
+
 				this.users=[];
 				this.isOk=false;
 				localStorage.setItem('intro', '');
@@ -92,6 +102,15 @@ export default new Vuex.Store({
 			localStorage.setItem('intro', '');
 			return new Promise((resolve, reject) => {
 				commit('register_request');
+				/*
+
+				Здесь должно быть обращение к серверному скрипту, например, с помощью axios
+
+				*/
+				/* -------------------------------------------- */
+				/* Эмуляция коммуникации с бэкендом             */
+				/* -------------------------------------------- */
+
 				this.users=[];
 				this.isOk=true;
 

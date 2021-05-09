@@ -6,16 +6,14 @@
 				<div class="col-md-4 offset-md-4">
 
 					<div class="return-error">{{reterror}}</div>
-					<input placeholder="Введите свой email" type="text" v-model.trim="$v.email.$model"
-						   class="form-control" :class="{ 'is-invalid': $v.email.$error }" v-on:keyup="onKeyUp"/>
+					<input placeholder="Введите свой email" type="text" v-model.trim="$v.email.$model" class="form-control" :class="{ 'is-invalid': $v.email.$error }" v-on:keyup="onKeyUp"/>
 					<div class="invalid-feedback">
 						<div v-if="!$v.email.required">email обязателен</div>
 						<div v-if="!$v.email.email">неверный email</div>
 					</div>
 					<br/>
 
-					<input placeholder="Введите пароль" type="password" v-model.trim="$v.password.$model"
-						   class="form-control" :class="{ 'is-invalid': $v.password.$error }" v-on:keyup="onKeyUp"/>
+					<input placeholder="Введите пароль" type="password" v-model.trim="$v.password.$model" class="form-control" :class="{ 'is-invalid': $v.password.$error }" v-on:keyup="onKeyUp"/>
 					<div class="invalid-feedback">
 						<div v-if="!$v.password.required">пароль обязателен</div>
 						<div v-if="!$v.password.minLength">мин. длина пароля 6 символов</div>

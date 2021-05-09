@@ -7,16 +7,14 @@
 					<div class="return-error">{{reterror}}</div>
 
 					<label>Имя</label>
-					<input type="text" v-model.trim="$v.name.$model" class="form-control"
-						   :class="{ 'is-invalid': $v.name.$error }"/>
+					<input type="text" v-model.trim="$v.name.$model" class="form-control" :class="{ 'is-invalid': $v.name.$error }"/>
 					<div class="invalid-feedback">
 						<div v-if="!$v.name.required">имя обязательно</div>
 					</div>
 					<br/>
 
 					<label>Email</label>
-					<input type="text" v-model.trim="$v.email.$model" class="form-control"
-						   :class="{ 'is-invalid': $v.email.$error }" v-on:keyup="onKeyUp"/>
+					<input type="text" v-model.trim="$v.email.$model" class="form-control" :class="{ 'is-invalid': $v.email.$error }" v-on:keyup="onKeyUp"/>
 					<div class="invalid-feedback">
 						<div v-if="!$v.email.required">email обязателен</div>
 						<div v-if="!$v.email.email">неверный email</div>
@@ -24,8 +22,7 @@
 					<br/>
 
 					<label>Пароль</label>
-					<input type="password" v-model.trim="$v.password.$model" class="form-control"
-						   :class="{ 'is-invalid': $v.password.$error }"/>
+					<input type="password" v-model.trim="$v.password.$model" class="form-control" :class="{ 'is-invalid': $v.password.$error }"/>
 					<div class="invalid-feedback">
 						<div v-if="!$v.password.required">пароль обязателен</div>
 						<div v-if="!$v.password.minLength">мин. длина пароля 6 символов</div>
@@ -33,8 +30,7 @@
 					<br/>
 
 					<label>Подтверждение пароля</label>
-					<input type="password" v-model.trim="$v.passwordConfirm.$model" class="form-control"
-						   :class="{ 'is-invalid': $v.passwordConfirm.$error }"/>
+					<input type="password" v-model.trim="$v.passwordConfirm.$model" class="form-control" :class="{ 'is-invalid': $v.passwordConfirm.$error }"/>
 					<div class="invalid-feedback">
 						<div v-if="!$v.passwordConfirm.sameAsPassword">пароли не совпадают</div>
 					</div>
