@@ -43,7 +43,7 @@
 		},
 		computed: {
 			intro: function () {
-				if (localStorage.getItem('intro') == '') {
+				if (!localStorage.getItem('intro') || localStorage.getItem('intro').trim === '') {
 					return '<h1>АВТОРИЗАЦИЯ</h1>';
 				} else {
 					localStorage.setItem('intro', '');
